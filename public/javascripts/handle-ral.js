@@ -23,12 +23,6 @@ const configuration = {
 
 /* GET home page. */
 function handleFormRalFr12(formData, isOnline) {
-    //let data = { 
-    //    nomPavillon: formData.nomPavillon,
-    //    genreBatimentFenetre: formData.genreBatimentFenetre, 
-    //    siteHistoriqueStJacques: formData.siteHistoriqueStJacques,
-    //    quelEtage: formData.quelEtage
-    //};
     if (isOnline) {
         // online : submit form
         let data = JSON.stringify(formData);
