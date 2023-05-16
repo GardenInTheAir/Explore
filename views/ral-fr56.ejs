@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <head>
+    <title><%= title %></title>
+    <%- include ("partials/header") %>
+  </head>
+</head>
+<body>
+  <%- include ("partials/nav") %>
+  <div class="contenu-principal">
+            <h1>Rallye FR5 - FR6</h1>
+
+            <!-- FR1 should be hidden unless we choose radio option FR1 -->
+            <form action="/submit-ral-fr56" method="post" id="quiz-fr1">
+              <p class="indice">Point de départ<br>Pavillon J, coin Sainte-Catherine et Saint-Denis</p>
+              <p class="question">Approchez et trouvez le nom du pavillon. Quelle est son nom ?</p>
+              <br><input type="text" name="nomPavillon" id="nomPavillon">
+              <p class="fait-interessant">A partir de 1959, cette personne se demarque entre autres par ses reportages a l'etranger et devient la premiere femme a s'imposer comme grand reposter. Aujourd'hui le pavillon arbite entre autre l'Ecole des medias de l'UQAM.</p>
+              
+              <p class="indice">Entrez dans le pavillon, approchez des escaliers <br> Avant de descendre, observez autour de vous. Une fenetre ronde prend place sur l'un des murs du pavillon et laisse entrer de la lumiere.</p>
+              <p class="question"> En general, dans quel genre de batiment voyons-nous ce genre de fenetre?</p><br>
+              <input type="text" name="genreBatimentFenetre" id="genreBatimentFenetre">
+              <p class="fait-interessant">Faits interessants - Le pavillon est localise sur le site historique de l'ancienne <input type="text" name="siteHistoriqueStJacques" id="siteHistoriqueStJacques"> Saint-Jacques. On y voit des elements architecturaux de style neo-gothique du vieux batiment.</p>
+              
+              <p class="indice">Descendez les escaliers. Rendez-vous dans l'agora du pavillon. Dirigez-vous vers le pavillon A en demeurant au meme niveau. <br>
+              trouvez la bibliotheque centrale de l'UQAM. Il y existe un centre des livres rares et des collections speciales.</p>
+              <p class="question">A quel etage est-il?</p><br>
+              <input type="text" name="quelEtage" id="quelEtage">
+              <p class="fait-interessant">Fait interessant - Ce nouvel espace d'etude et de recherche loge sur 2 etages, possede une magnifique collection de 45 000 livres rares dates entre le XIVe au XXe siecle.</p>
+
+              <p class="indice">Sortez du pavillon pour vous retrouver a cote de la fontaine dans la cour interieure.</p>
+              <p class="question">Prenez une photo par equipe. Elle pourrait vous servir !</p>
+              <p class="warning">** Ne prenez pas les photos avec le meme cellulaire sur lequel vous remplissez ce formulaire. Les donnees entrees pourront etre perdues. **</p>
+
+              <p class="indice">Dirigez-vous vers le metro Berri-UQAM, au coin des rues Sainte-Catherine et Berri. <br> Entrez et descendez vers la station.</p>
+              
+              <button type="submit">Envoyez vos réponses</button>
+            </form>
+        </div>
+
+    </main>
+    <%- include ("partials/scripts") %>
+</body>
+</html>

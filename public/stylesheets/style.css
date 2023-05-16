@@ -1,0 +1,84 @@
+/* style menu responsive sidebar */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #D1D1CC;
+}
+
+main {
+  background-color: #D1D1CC;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#hamburger {
+  fill: #292C45;
+  height: 38px;
+  width: 38px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#sidebar {
+  width: 0px;
+  height: 100vh;
+  background-color: #D1D1CC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  white-space: nowrap;
+}
+
+.sidebar-item {
+  text-decoration: none;
+  color: #292C45;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar-item:hover {
+  background-color: #A9ABA6;
+}
+
+.sidebar-item > div {
+  padding: 0 1em;
+}
+
+.sidebar-item svg {
+  flex-shrink: 0;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+/* style contenue */
+.contenu-principal {
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+  color: #292C45;
+}
+
+#logo {
+  border-radius: 15%;
+  width: 15%;
+}

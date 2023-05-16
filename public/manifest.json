@@ -1,0 +1,19 @@
+{
+    "lang": "fr",
+    "name": "Programme Explore",
+    "short_name": "Explore",
+    "description": "PWA pour le programme Explore de la formation linguistique non créditée de l'UQAM",
+    "start_url": "/",
+    "background_color": "#D1D1CC",
+    "theme_color": "#292C45",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "/images/logo-explore.png",
+        "sizes": "512x512"
+      }
+    ],
+    "logo": "/images/logo-explore.png"
+  }
+  

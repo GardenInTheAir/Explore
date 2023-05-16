@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <%- include ("partials/header") %>  
+  <title><%= title %></title>
+</head>
+<body>
+    <main>
+      <%- include ("partials/nav") %>  
+      <div class="contenu-principal">
+            <h1>Plan du campus</h1>
+            
+            <p>
+                Téléchargez le plan du campus ci-dessous. Il pourra vous servir durant vos activités !
+            </p>
+            <a href="/docs/carte_uqam.pdf" download>
+              <img src="/images/download-icon.png" alt="download-icon" id="logo">
+            </a>
+        </div>
+    </main>
+    <%- include ("partials/scripts") %>
+</body>
+</html>

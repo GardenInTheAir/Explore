@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <%- include ("partials/header") %>  
+    <title><%= title %></title>
+  </head>
+  <body>
+      <main>
+        <%- include ("partials/nav") %>   
+      <div class="contenu-principal">
+            <h1>Rallye UQAM</h1>
+            <p>
+                Avant de commencez, assurez-vous d'avoir téléchargé le plan du campus. Il pourrai vous servir ! <br>
+                Quand vous êtes prêts et prêtes, appuyez sur le bouton "COMMENCER !" ci-dessous.
+            </p>
+            <button id="commencer" onclick="showGroupe()">COMMENCER !</button>
+
+            <section id="groupe" style="visibility: hidden;">
+              <span class="question">Choisissez votre groupe :</span><br>
+              <button onclick='location.href="/rallye/ral-fr12"'>FR1 - FR2</button>
+              <button onclick='location.href="/rallye/ral-fr34"'>FR3 - FR4</button>
+              <button onclick='location.href="/rallye/ral-fr56"'>FR5 - FR6</button>
+              <button onclick='location.href="/rallye/ral-fr78"'>FR7 - FR8</button>
+            </section>
+      </div>
+
+    </main>
+    <%- include ("partials/scripts") %>
+  </body>
+</html>
