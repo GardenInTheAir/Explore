@@ -17,9 +17,8 @@ router.post('/submit-ral-fr12', function(req, res, next) {
         isOnline = false;
     }
     let data = formHandler.handleFormRalFr12(formData, isOnline)
-    .then(() => {
-        res.render('confirmation', { title: "Confirmation | Explore", file: data});
-    })
+
+    res.render('confirmation', { title: "Confirmation | Explore", file: data});
 });
 
 module.exports = router;
