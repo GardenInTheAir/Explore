@@ -10,11 +10,16 @@
             <h1>Bravo !</h1>
             <p>
                 Vos réponses sont enregistré dans le fichier "log.json". 
-                Veuillez l'envoyé à votre enseignant par courriel !
+                Veuillez l'envoyé à votre enseignant par courriel ! 
+            </p>
+            <p>
+                Voici vos réponses ci-dessous. Téléchargez-les pour les envoyer à votre enseignant(e).
+            </p>
+            <a download><%= file %></a>
+            <br>
                 <a href="/">
                     <button>Retournez à l'accueil</button>
                 </a>
-            </p>
         </div>
     </main>
     <%- include ("partials/scripts") %>
